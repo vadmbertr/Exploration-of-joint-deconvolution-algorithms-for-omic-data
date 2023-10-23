@@ -1,0 +1,28 @@
+\begin{table}[ht]
+\centering
+\caption{Ranks of the best deconvolution pipelines achieved on both the simulated datasets and the real dataset. Pipelines employing summation or VAE integration are highlighted in red.}
+\label{tab:simu_real_comp}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{l|cc||l|cc}
+ & \multicolumn{2}{c||}{Ranks} & & \multicolumn{2}{c}{Ranks} \\
+Supervised pipelines & simulated & real & Unsupervised pipelines & simulated & real \\ \hline
+\color[HTML]{CB0000} MB sum\_HVG RLR & \cellcolor[HTML]{F0F921} 1 & \cellcolor[HTML]{F1F426} 3 & SB MET ICA & \cellcolor[HTML]{F0F921} 1 & \cellcolor[HTML]{F1F426} 3 \\ 
+\color[HTML]{CB0000} MB sum\_HVG constrRLR & \cellcolor[HTML]{F1F426} 3 & \cellcolor[HTML]{F0F624} 2 & \color[HTML]{CB0000} MB owoMET-RNA MLP & \cellcolor[HTML]{F1F426} 3 & \cellcolor[HTML]{F2F227} 4 \\ 
+\color[HTML]{CB0000} MB sum\_HVG constrOptimL1 & \cellcolor[HTML]{F0F624} 2 & \cellcolor[HTML]{F2F227} 4 & SB RNA ICA & \cellcolor[HTML]{F5E926} 8 & \cellcolor[HTML]{F0F921} 1 \\ 
+\color[HTML]{CB0000} MB sum\_HVG QP & \cellcolor[HTML]{F7E525} 10 & \cellcolor[HTML]{F0F921} 1 & MB initRNA RNA\_ICA-MET\_ICA & \cellcolor[HTML]{F7E225} 11 & \cellcolor[HTML]{F3F027} 5 \\ 
+\color[HTML]{CB0000} MB sum\_HVG constrOptimJS & \cellcolor[HTML]{F6E826} 9 & \cellcolor[HTML]{F3EE27} 6 & SB MET EDec & \cellcolor[HTML]{F2F227} 4 & \cellcolor[HTML]{F8DE25} 13 \\ 
+\color[HTML]{CB0000} MB sum\_HVG constrOptimL2 & \cellcolor[HTML]{F8E125} 12 & \cellcolor[HTML]{F3F027} 5 & MB initRNA RNA\_ICA-MET\_RefFreeEWAS & \cellcolor[HTML]{F8DE25} 13 & \cellcolor[HTML]{F3EE27} 6 \\ 
+SB RNA OLS & \cellcolor[HTML]{FCCF25} 20 & \cellcolor[HTML]{F7E525} 10 & \color[HTML]{CB0000} MB owoRNA-MET MLP & \cellcolor[HTML]{F8E125} 12 & \cellcolor[HTML]{F5E926} 8 \\ 
+SB RNA RLR & \cellcolor[HTML]{F5EC27} 7 & \cellcolor[HTML]{FDC727} 24 & \color[HTML]{CB0000} SB owoRNA MLP & \cellcolor[HTML]{FADA24} 15 & \cellcolor[HTML]{F5EC27} 7 \\ 
+MB mean RNA\_DeconRNASeq-MET\_RLR & \cellcolor[HTML]{F5E926} 8 & \cellcolor[HTML]{FCA835} 40 & \color[HTML]{CB0000} MB two MLP & \cellcolor[HTML]{FDCA26} 23 & \cellcolor[HTML]{F0F624} 2 \\ 
+SB MET\_TOAST RLR & \cellcolor[HTML]{F3F027} 5 & \cellcolor[HTML]{F58C46} 56 & MB initRNA RNA\_ICA-MET\_EDec & \cellcolor[HTML]{FBD324} 18 & \cellcolor[HTML]{F7E525} 10 \\ 
+MB mean RNA\_RLR-MET\_RLR & \cellcolor[HTML]{F3EE27} 6 & \cellcolor[HTML]{F3864A} 59 & MB altMET RNA\_ICA-MET\_ICA & \cellcolor[HTML]{FEBB2B} 30 & \cellcolor[HTML]{F6E826} 9 \\ 
+SB MET RLR & \cellcolor[HTML]{F2F227} 4 & \cellcolor[HTML]{EE7B51} 66 & MB initMET RNA\_ICA-MET\_ICA & \cellcolor[HTML]{F0F624} 2 & NA \\ 
+SB RNA\_TOAST OLS & \cellcolor[HTML]{CB4679} 101 & \cellcolor[HTML]{F6E826} 9 & SB MET MeDeCom & \cellcolor[HTML]{F3EE27} 6 & NA \\ 
+SB RNA SVR & \cellcolor[HTML]{AD2793} 123 & \cellcolor[HTML]{F5EC27} 7 & SB MET\_TOAST EDec & \cellcolor[HTML]{F3F027} 5 & NA \\ 
+SB RNA\_TOAST NNLS & NA & \cellcolor[HTML]{F5E926} 8 & SB MET\_TOAST ICA & \cellcolor[HTML]{F6E826} 9 & NA \\ 
+ &  &  & SB MET\_TOAST MeDeCom & \cellcolor[HTML]{F5EC27} 7 & NA \\ 
+ &  &  & SB MET\_HVG EDec & \cellcolor[HTML]{F7E525} 10 & NA
+\end{tabular}
+}
+\end{table}

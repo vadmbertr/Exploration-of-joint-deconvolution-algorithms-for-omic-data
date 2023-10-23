@@ -1,0 +1,12 @@
+\begin{table}[ht]
+\centering
+\caption{OWO-VAE architecture layers specifications.}
+\label{tab:vae}
+\resizebox{\textwidth}{!}{\begin{tabular}{l|c|c|c|c|c|c|c|c|c|c|c}
+& \multicolumn{4}{c|}{Encoder layers} & \multicolumn{4}{c|}{Decoder layers} & \multicolumn{3}{c}{Deconv layers} \\ \hhline{~|-----------|}
+& 1 & 2 & 3 & 4 & 1 & 2 & 3 & 4 & 1 & 2 & 3 \\ \hline
+IN & $G$ & 2048 & 512 & 256 & 64 & 256 & 512 & 2048 & 64 & 32 & 16 \\ \hline
+OUT & 2048 & 512 & 256 & 64 & 256 & 512 & 2048 & $G$ & 32 & 16 & $K$ \\ \hline
+Act. & ReLU & ReLU & ReLU & & ReLU & ReLU & ReLU & sigmoid & ReLU & ReLU & (softmax)
+\end{tabular}}
+\end{table}
